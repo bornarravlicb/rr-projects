@@ -1,14 +1,15 @@
-/* Reset and base */
+/* Reset defaults */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Body setup */
 body {
-  background-color: #0a0a0a; /* deep black */
-  color: #e0e0e0; /* light gray text */
-  font-family: 'Fira Code', monospace; /* coding-style font */
+  background-color: #000000; /* full black */
+  color: #ffffff; /* white text */
+  font-family: 'JetBrains Mono', monospace; /* coding-style font */
   min-height: 100vh;
   padding: 40px 20px;
   line-height: 1.5;
@@ -18,7 +19,7 @@ body {
 h1 {
   text-align: center;
   font-size: 2.5em;
-  color: #4fc3ff;
+  color: #ffffff;
   margin-bottom: 40px;
 }
 
@@ -33,16 +34,22 @@ h1 {
 
 /* Project cards */
 .project-card {
-  background-color: #1c1c1c; /* dark card */
+  background-color: #000000; /* black card */
+  border: 1px solid #111111;
   border-radius: 10px;
   overflow: hidden;
   padding: 20px;
-  transition: background-color 0.3s, transform 0.2s;
+  transition: transform 0.2s;
 }
 
 .project-card:hover {
-  background-color: #2a2a2a; /* slightly lighter on hover */
   transform: translateY(-4px);
+}
+
+.project-card h3 {
+  font-size: 1.6em;
+  color: #ffffff;
+  margin-bottom: 15px;
 }
 
 .project-card img {
@@ -52,15 +59,10 @@ h1 {
   margin-bottom: 15px;
 }
 
-.project-card h3 {
-  font-size: 1.6em;
-  color: #4fc3ff;
-  margin-bottom: 10px;
-}
-
 .project-card p {
   font-size: 1em;
-  color: #c0c0c0;
+  color: #ffffff;
+  margin-bottom: 12px;
 }
 
 /* Tags */
@@ -69,8 +71,8 @@ h1 {
 }
 .tag {
   display: inline-block;
-  background-color: #333;
-  color: #a8a8a8;
+  background-color: #111111;
+  color: #ffffff;
   font-size: 0.9em;
   padding: 4px 8px;
   border-radius: 5px;
