@@ -31,7 +31,7 @@ body {
   color: #ffffff;
   font-weight: bold;
   padding: 10px 20px;
-  border: 3px solid #ffffff;
+  border: 2px solid #ffffff;
   border-radius: 5px;
   transition: transform 0.2s, box-shadow 0.2s;
 }
@@ -79,14 +79,14 @@ body {
   object-fit: cover;
   border-radius: 12px;
   margin-bottom: 30px;
-  border: 3px solid #ffffff;
+  border: 5px solid #ffffff;
   box-shadow: 0 0 8px #ffffff33;
 }
 
 .detail-section {
   margin: 40px 0;
   padding: 20px;
-  border: 3px solid #ffffff;
+  border: 5px solid #ffffff;
   border-radius: 12px;
   background-color: #000000;
   box-shadow: 0 0 8px #ffffff33;
@@ -124,10 +124,10 @@ body {
   color: #ffffff;
 }
 
-/* Dropdown sections styling - 3px */
+/* Dropdown sections styling - 5px */
 .dropdown-section {
   margin: 40px 0;
-  border: 3px solid #ffffff;
+  border: 5px solid #ffffff;
   border-radius: 12px;
   background-color: #000000;
   box-shadow: 0 0 8px #ffffff33;
@@ -217,11 +217,11 @@ body {
   font-size: 1.5em;
 }
 
-/* Disclaimer box styling - 3px */
+/* Disclaimer box styling - 5px */
 .disclaimer-box {
   margin: 40px 0;
   padding: 20px;
-  border: 3px solid #ffffff;
+  border: 5px solid #ffffff;
   border-radius: 12px;
   background-color: #000000;
   box-shadow: 0 0 16px #ffffffaa;
@@ -241,11 +241,11 @@ body {
   opacity: 0.9;
 }
 
-/* Tags container on detail page - 3px */
+/* Tags container on detail page - 5px */
 .detail-content .tags {
   margin: 20px 0;
   padding: 15px;
-  border: 3px solid #ffffff;
+  border: 5px solid #ffffff;
   border-radius: 12px;
   background-color: #000000;
   box-shadow: 0 0 8px #ffffff33;
