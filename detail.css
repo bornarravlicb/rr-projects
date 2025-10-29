@@ -1,4 +1,22 @@
-/* Detail page styling - matches main site theme */
+/* Reset defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body setup for detail page */
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: 'JetBrains Mono', monospace;
+  min-height: 100vh;
+  padding: 20px;
+  overflow-y: auto;
+  line-height: 1.5;
+}
+
+/* Detail page styling */
 .detail-container {
   max-width: 700px;
   margin: 0 auto;
@@ -27,6 +45,15 @@
   font-size: 2.5rem;
   margin-bottom: 10px;
   color: #ffffff;
+}
+
+/* Author name styling */
+.project-author {
+  color: #ffffff;
+  opacity: 0.8;
+  font-size: 1.1em;
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 
 .project-date {
@@ -87,6 +114,99 @@
   color: #ffffff;
 }
 
+/* Dropdown sections styling */
+.dropdown-section {
+  margin: 40px 0;
+  border: 5px solid #ffffff;
+  border-radius: 12px;
+  background-color: #000000;
+  box-shadow: 0 0 8px #ffffff33;
+  overflow: hidden;
+}
+
+.dropdown-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  user-select: none;
+}
+
+.dropdown-header:hover {
+  background-color: #111111;
+}
+
+.dropdown-header h2 {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin: 0;
+  border: none;
+  padding: 0;
+}
+
+.dropdown-icon {
+  font-size: 1.2rem;
+  color: #ffffff;
+  transition: transform 0.3s;
+}
+
+.dropdown-content {
+  padding: 0 20px 20px 20px;
+  color: #ffffff;
+  line-height: 1.8;
+}
+
+.dropdown-content p {
+  margin-bottom: 10px;
+}
+
+/* Downloads styling */
+#downloads-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.download-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #000000;
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #ffffff;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.download-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 16px #ffffffaa;
+}
+
+.download-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.download-name {
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.download-size {
+  font-size: 0.85em;
+  opacity: 0.7;
+}
+
+.download-arrow {
+  font-size: 1.5em;
+}
+
 .detail-links {
   display: flex;
   gap: 20px;
@@ -110,7 +230,7 @@
   box-shadow: 0 0 16px #ffffffaa;
 }
 
-/* Tags on detail page - reuse same style */
+/* Tags on detail page */
 .detail-content .tags {
   margin: 20px 0;
 }
