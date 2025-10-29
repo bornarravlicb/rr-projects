@@ -33,6 +33,7 @@ body {
   padding: 20px;
   box-shadow: 0 0 8px #ffffff33; /* subtle white glow even when not hovered */
   transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
 }
 
 .project-card:hover {
@@ -63,6 +64,7 @@ body {
 .tags {
   margin-top: 12px;
 }
+
 .tag {
   display: inline-block;
   background-color: #000000; /* black tag */
