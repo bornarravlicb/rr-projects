@@ -7,12 +7,12 @@
 
 /* Body setup */
 body {
-  background-color: #000000; /* full black */
+  background-color: #000000; /* full black background */
   color: #ffffff; /* all text white */
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'JetBrains Mono', monospace; /* coding-style font */
   min-height: 100vh;
   padding: 20px;
-  overflow-y: auto; /* scrollable */
+  overflow-y: auto; /* scrollable if content exceeds viewport */
   line-height: 1.5;
 }
 
@@ -28,7 +28,7 @@ body {
 /* Project cards */
 .project-card {
   background-color: #000000; /* black card */
-  border: 2px solid #ffffff; /* visible white border */
+  border: 4px solid #ffffff; /* thick, visible white border */
   border-radius: 10px;
   overflow: hidden;
   padding: 20px;
@@ -37,7 +37,7 @@ body {
 
 .project-card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 0 10px #ffffff33; /* subtle white glow on hover */
+  box-shadow: 0 0 12px #ffffff66; /* subtle white glow on hover */
 }
 
 .project-card h3 {
@@ -71,5 +71,5 @@ body {
   padding: 4px 8px;
   border-radius: 5px;
   margin-right: 6px;
-  border: 1px solid #ffffff; /* small visible border around tags */
+  border: 2px solid #ffffff; /* thick, visible white border for tags */
 }
