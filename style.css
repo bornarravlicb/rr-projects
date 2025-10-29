@@ -26,7 +26,7 @@ h1 {
 /* Dashboard layout */
 .dashboard {
   display: grid;
-  grid-template-columns: 1fr; /* always single column */
+  grid-template-columns: 1fr; /* single column */
   gap: 30px;
   max-width: 700px;
   margin: 0 auto;
@@ -34,16 +34,17 @@ h1 {
 
 /* Project cards */
 .project-card {
-  background-color: #000000; /* black card */
-  border: 1px solid #111111;
+  background-color: #050505; /* nearly black */
+  border: 1px solid #111111; /* very dark border */
   border-radius: 10px;
   overflow: hidden;
   padding: 20px;
-  transition: transform 0.2s;
+  transition: transform 0.2s, background-color 0.2s;
 }
 
 .project-card:hover {
-  transform: translateY(-4px);
+  background-color: #111111; /* subtle hover feedback */
+  transform: translateY(-2px);
 }
 
 .project-card h3 {
@@ -71,7 +72,7 @@ h1 {
 }
 .tag {
   display: inline-block;
-  background-color: #111111;
+  background-color: #111111; /* dark tag background */
   color: #ffffff;
   font-size: 0.9em;
   padding: 4px 8px;
