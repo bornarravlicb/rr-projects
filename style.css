@@ -7,8 +7,8 @@
 
 /* Body setup */
 body {
-  background-color: #000000; /* full black */
-  color: #ffffff; /* white text */
+  background-color: #000000; /* pure black */
+  color: #ffffff; /* all text white */
   font-family: 'JetBrains Mono', monospace; /* coding-style font */
   min-height: 100vh;
   padding: 40px 20px;
@@ -19,7 +19,7 @@ body {
 h1 {
   text-align: center;
   font-size: 2.5em;
-  color: #ffffff;
+  color: #ffffff; /* white */
   margin-bottom: 40px;
 }
 
@@ -34,22 +34,21 @@ h1 {
 
 /* Project cards */
 .project-card {
-  background-color: #050505; /* nearly black */
-  border: 1px solid #111111; /* very dark border */
+  background-color: #000000; /* fully black */
+  border: 1px solid #000000; /* black border to blend */
   border-radius: 10px;
   overflow: hidden;
   padding: 20px;
-  transition: transform 0.2s, background-color 0.2s;
+  transition: transform 0.2s;
 }
 
 .project-card:hover {
-  background-color: #111111; /* subtle hover feedback */
-  transform: translateY(-2px);
+  transform: translateY(-2px); /* subtle hover effect */
 }
 
 .project-card h3 {
   font-size: 1.6em;
-  color: #ffffff;
+  color: #ffffff; /* white text */
   margin-bottom: 15px;
 }
 
@@ -62,7 +61,7 @@ h1 {
 
 .project-card p {
   font-size: 1em;
-  color: #ffffff;
+  color: #ffffff; /* white */
   margin-bottom: 12px;
 }
 
@@ -72,8 +71,8 @@ h1 {
 }
 .tag {
   display: inline-block;
-  background-color: #111111; /* dark tag background */
-  color: #ffffff;
+  background-color: #000000; /* black tag */
+  color: #ffffff; /* white */
   font-size: 0.9em;
   padding: 4px 8px;
   border-radius: 5px;
