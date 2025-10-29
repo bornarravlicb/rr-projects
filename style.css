@@ -7,20 +7,12 @@
 
 /* Body setup */
 body {
-  background-color: #000000; /* pure black */
+  background-color: #000000; /* full black */
   color: #ffffff; /* all text white */
   font-family: 'JetBrains Mono', monospace; /* coding-style font */
   min-height: 100vh;
   padding: 40px 20px;
   line-height: 1.5;
-}
-
-/* Page title */
-h1 {
-  text-align: center;
-  font-size: 2.5em;
-  color: #ffffff; /* white */
-  margin-bottom: 40px;
 }
 
 /* Dashboard layout */
@@ -34,8 +26,8 @@ h1 {
 
 /* Project cards */
 .project-card {
-  background-color: #000000; /* fully black */
-  border: 1px solid #000000; /* black border to blend */
+  background-color: #000000; /* black card */
+  border: 1px solid #ffffff; /* white border */
   border-radius: 10px;
   overflow: hidden;
   padding: 20px;
