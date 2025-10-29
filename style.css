@@ -7,12 +7,12 @@
 
 /* Body setup */
 body {
-  background-color: #000000; /* full black background */
-  color: #ffffff; /* all text white */
+  background-color: #000000; /* black background */
+  color: #ffffff; /* white text */
   font-family: 'JetBrains Mono', monospace;
   min-height: 100vh;
   padding: 20px;
-  overflow-y: auto; /* scrollable */
+  overflow-y: auto;
   line-height: 1.5;
 }
 
@@ -28,20 +28,21 @@ body {
 /* Project cards */
 .project-card {
   background-color: #000000; /* black card */
-  border: 5px solid #ffffff; /* thick, visible white border */
-  border-radius: 10px;
+  border: 6px solid #ffffff; /* thick white border */
+  border-radius: 12px;
   padding: 20px;
+  box-shadow: 0 0 8px #ffffff33; /* subtle white glow even when not hovered */
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .project-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 0 15px #ffffffaa; /* stronger white glow on hover */
+  box-shadow: 0 0 16px #ffffffaa; /* stronger white glow on hover */
 }
 
 .project-card h3 {
   font-size: 1.6em;
-  color: #ffffff; /* white text */
+  color: #ffffff;
   margin-bottom: 15px;
 }
 
@@ -54,7 +55,7 @@ body {
 
 .project-card p {
   font-size: 1em;
-  color: #ffffff; /* white */
+  color: #ffffff;
   margin-bottom: 12px;
 }
 
@@ -70,5 +71,5 @@ body {
   padding: 5px 10px;
   border-radius: 5px;
   margin-right: 6px;
-  border: 2px solid #ffffff; /* thick white border */
+  border: 3px solid #ffffff; /* thick visible white border for tags */
 }
