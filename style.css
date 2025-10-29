@@ -12,7 +12,7 @@ body {
   font-family: 'JetBrains Mono', monospace;
   min-height: 100vh;
   padding: 20px;
-  overflow-y: auto; /* scrollable if content overflows */
+  overflow-y: auto; /* scrollable */
   line-height: 1.5;
 }
 
@@ -28,15 +28,16 @@ body {
 /* Project cards */
 .project-card {
   background-color: #000000; /* black card */
-  border: 1px solid #ffffff; /* white border */
+  border: 2px solid #ffffff; /* visible white border */
   border-radius: 10px;
   overflow: hidden;
   padding: 20px;
-  transition: transform 0.2s;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .project-card:hover {
-  transform: translateY(-2px); /* subtle hover effect */
+  transform: translateY(-2px);
+  box-shadow: 0 0 10px #ffffff33; /* subtle white glow on hover */
 }
 
 .project-card h3 {
@@ -70,4 +71,5 @@ body {
   padding: 4px 8px;
   border-radius: 5px;
   margin-right: 6px;
+  border: 1px solid #ffffff; /* small visible border around tags */
 }
