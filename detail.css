@@ -207,27 +207,28 @@ body {
   font-size: 1.5em;
 }
 
-.detail-links {
-  display: flex;
-  gap: 20px;
-  margin-top: 40px;
-  flex-wrap: wrap;
-}
-
-.detail-button {
-  padding: 12px 24px;
+/* Disclaimer box styling */
+.disclaimer-box {
+  margin: 40px 0;
+  padding: 20px;
+  border: 5px solid #ffffff;
+  border-radius: 12px;
   background-color: #000000;
-  color: #ffffff;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  border: 2px solid #ffffff;
-  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 0 16px #ffffffaa;
 }
 
-.detail-button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 0 16px #ffffffaa;
+.disclaimer-box h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #ffffff;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ffffff;
+}
+
+.disclaimer-box p {
+  line-height: 1.8;
+  color: #ffffff;
+  opacity: 0.9;
 }
 
 /* Tags on detail page */
