@@ -13,9 +13,10 @@ if (project) {
   document.getElementById('project-title').textContent = project.title;
   document.getElementById('project-author').textContent = `By ${project.author}`;
   document.getElementById('project-date').textContent = project.date;
-  document.getElementById('project-image').src = project.image;
-  document.getElementById('project-image').alt = project.title;
   document.getElementById('project-description').textContent = project.longDescription;
+  
+  // Add disclaimer
+  document.getElementById('disclaimer-text').textContent = project.disclaimer;
   
   // Add tags
   const tagsContainer = document.getElementById('project-tags');
@@ -91,10 +92,6 @@ if (project) {
       downloadsList.appendChild(downloadItem);
     });
   }
-  
-  // Set links
-  document.getElementById('github-link').href = project.githubUrl;
-  document.getElementById('live-link').href = project.liveUrl;
   
   // Update page title
   document.title = `${project.title} - Project Detail`;
